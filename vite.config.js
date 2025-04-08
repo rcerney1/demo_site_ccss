@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     preview: {
-      allowedHosts: ['demo-site-ccss.onrender.com'], // Add your Render URL here
+      allowedHosts: 'all',  // Your Render domain
     },
   },
 })
