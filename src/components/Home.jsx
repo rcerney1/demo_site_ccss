@@ -38,7 +38,7 @@ function Home() {
                 data-aos-delay="200"
             >
                 <h2 className="text-3xl md:text-5xl font-semibold mb-8">
-                    Why Choose California Comp Security?
+                    Why Choose California Compliance Security Services?
                 </h2>
                 <p className="text-lg md:text-xl text-gray-700 max-w-4xl mb-12 leading-relaxed">
                     We specialize in designing and installing low voltage security
@@ -201,7 +201,7 @@ function Home() {
 
                     {/* Copyright */}
                     <p className="text-sm text-gray-400">
-                        &copy; {new Date().getFullYear()} California Comp Security. All rights reserved.
+                        &copy; {new Date().getFullYear()} California Compliance Security Services. All rights reserved.
                     </p>
                 </div>
             </footer>

@@ -26,7 +26,7 @@ function Navbar() {
                 {/* Left: Logo + Nav */}
                 <div className="flex items-center space-x-10">
                     <h1 className="text-2xl md:text-3xl font-serif font-semibold whitespace-nowrap">
-                        California Comp Security
+                        California Compliance Security Services
                     </h1>
 
                     <nav className="hidden md:flex space-x-8 text-base font-medium">
