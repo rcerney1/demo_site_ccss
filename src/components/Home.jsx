@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/section1.jpg";
 import elegantHome from "../assets/elegant_home_2.jpg"
+import sophisticated from "../assets/sophisticated.jpg"
 
 function Home() {
     return (
@@ -10,9 +11,9 @@ function Home() {
 
             <section className="relative w-full h-screen">
                 <img
-                    src={elegantHome}
+                    src={sophisticated}
                     alt="Security technician"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40">
                     <h1
@@ -30,6 +31,7 @@ function Home() {
                     </p>
                 </div>
             </section>
+
 
 
 
