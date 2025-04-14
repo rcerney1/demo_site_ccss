@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/section1.jpg";
+import elegantHome from "../assets/elegant_home_2.jpg"
 
 function Home() {
     return (
@@ -10,26 +11,27 @@ function Home() {
             {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
-                    src={heroImage}
+                    src={elegantHome}
                     alt="Security technician"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-center px-6 md:px-16 text-left">
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40">
                     <h1
-                        className="text-4xl md:text-6xl font-bold text-white mb-4"
+                        className="text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl"
                         data-aos="fade-up"
                     >
-                        Discreet. Dependable. Designed for You.
+                        Introducing California Compliance Security Services
                     </h1>
                     <p
-                        className="text-lg md:text-xl text-gray-200 max-w-xl"
+                        className="text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        Tailored low voltage systems for premium homes and businesses.
+                        Your trusted partner in providing discreet, reliable, and custom security solutions for premium homes and businesses.
                     </p>
                 </div>
             </section>
+
 
             {/* Why Choose Us Section */}
             <section
@@ -180,7 +182,7 @@ function Home() {
                     Our team of experts is ready to provide you with reliable, discreet, and professional security solutions tailored to your needs. Let’s get started today!
                 </p>
                 <a
-                    href="#" 
+                    href="#"
                     className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
                 >
                     Get Started
