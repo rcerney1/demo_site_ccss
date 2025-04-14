@@ -8,7 +8,6 @@ function Home() {
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
 
-            {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
                     src={elegantHome}
@@ -17,13 +16,13 @@ function Home() {
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40">
                     <h1
-                        className="text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl"
+                        className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl"
                         data-aos="fade-up"
                     >
                         Introducing California Compliance Security Services
                     </h1>
                     <p
-                        className="text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
+                        className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
@@ -31,6 +30,7 @@ function Home() {
                     </p>
                 </div>
             </section>
+
 
 
             {/* Why Choose Us Section */}
