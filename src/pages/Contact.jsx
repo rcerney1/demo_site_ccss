@@ -42,21 +42,20 @@ function Contact() {
         setLoading(false);
     };
 
-
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
-
+            
             {/* Contact Form Section */}
-            <section className="h-screen py-24 px-6 text-center bg-gray-50 mt-24"> {/* Full height of screen */}
-                <h2 className="text-5xl font-semibold mb-8">Contact Us</h2>
-                <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-12">
+            <section className="min-h-screen py-12 px-6 text-center bg-gray-50 mt-24"> {/* Adjusted to min-h-screen for better mobile fit */}
+                <h2 className="text-4xl md:text-5xl font-semibold mb-8">Contact Us</h2>
+                <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-12">
                     Have a question? Get in touch with us, and our team will respond as soon as possible.
                 </p>
 
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">
                     {/* Contact Information */}
-                    <div className="text-left space-y-4">
+                    <div className="text-left space-y-4 mb-12 md:mb-0">
                         <h3 className="text-xl font-semibold">Contact Information</h3>
                         <p>Email: <a href="mailto:email@example.com" className="text-[#e79c8b]">email@example.com</a></p>
                         <p>Phone: <span className="text-[#e79c8b]">(555) 555-5555</span></p>
