@@ -10,9 +10,9 @@ function About() {
     const location = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0);
     }, [location]);
-    
+
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
@@ -20,9 +20,9 @@ function About() {
             {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
-                    ser="" //Add hero image here
+                    src="#"
                     alt="Security Service"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-center px-6 md:px-16 text-left pb-24 md:pb-40" data-aos="fade-up">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl">
@@ -46,7 +46,7 @@ function About() {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div>
                         <img
-                            src={heroImage}
+                            src={section1Image}
                             alt="Technician at work"
                             className="w-full h-auto rounded-lg shadow-md"
                         />
@@ -54,7 +54,7 @@ function About() {
                     <div>
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">Professional Staff</h3>
                         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat, ligula in eleifend vulputate, purus urna scelerisque eros, vitae facilisis nunc libero sit amet lorem. Duis at est eu orci fringilla aliquet sit amet id nisi. Curabitur euismod metus ut nulla sollicitudin, sed aliquet eros placerat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat, ligula in eleifend vulputate, purus urna scelerisque eros, vitae facilisis nunc libero sit amet lorem. Duis at est eu orci fringilla aliquet sit amet id nisi. Curabitur euismod metus ut nulla sollicitudin, sed aliquet eros placerat.
                         </p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ function About() {
                     Ready to Secure Your Property?
                 </h2>
                 <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-                Get in touch with our team to discuss your security needs and get started today!
+                    Get in touch with our team to discuss your security needs and get started today!
                 </p>
                 <a href="#contact" className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition">
                     Contact Us
@@ -117,11 +117,14 @@ function About() {
 
             <footer className="bg-gray-900 text-white py-12 px-6 text-center">
                 <div className="max-w-7xl mx-auto">
+                    {/* Quick Links */}
                     <div className="mb-6">
                         <a href="#services" className="text-gray-400 hover:text-white px-4">Services</a>
                         <a href="#contact" className="text-gray-400 hover:text-white px-4">Contact</a>
                         <a href="#about" className="text-gray-400 hover:text-white px-4">About</a>
                     </div>
+
+                    {/* Copyright */}
                     <p className="text-sm text-gray-400">
                         &copy; {new Date().getFullYear()} California Compliance Security Services. All rights reserved.
                     </p>
