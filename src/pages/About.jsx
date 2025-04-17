@@ -63,20 +63,20 @@ function About() {
             {/* Tailored Security Solutions */}
             <section className="bg-white text-gray-900 min-h-screen flex flex-col justify-center px-6 md:px-16 py-24" data-aos="fade-up" data-aos-delay="300">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div>
+                    <div className="order-1 md:order-2">
+                        <img
+                            src={section2Image}
+                            alt="Tailored Solutions"
+                            className="w-full h-auto rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="order-2 md:order-1">
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">
                             Tailored Security Solutions
                         </h3>
                         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                             Donec malesuada, justo ut fringilla fermentum, erat dui sodales nisi, ac tempus sem ligula ut elit. Suspendisse potenti. Mauris consequat orci sit amet dui varius, nec cursus ante tincidunt. Phasellus nec justo ut metus dapibus gravida. Aliquam erat volutpat. Nulla sed suscipit lorem.
                         </p>
-                    </div>
-                    <div>
-                        <img
-                            src={section2Image}
-                            alt="Tailored Solutions"
-                            className="w-full h-auto rounded-lg shadow-md"
-                        />
                     </div>
                 </div>
             </section>
