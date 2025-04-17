@@ -3,8 +3,16 @@ import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/section1.jpg";
 import elegantHome from "../assets/elegant_home_2.jpg"
 import sophisticated from "../assets/sophisticated.jpg"
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [location]);
+
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
@@ -51,9 +59,11 @@ function Home() {
                     entry systems — we deliver professional, discreet, and reliable
                     service every time.
                 </p>
-                <button className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-medium px-8 py-3 rounded-md transition">
-                    Learn More
-                </button>
+                <Link to="/about">
+                    <button className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-medium px-8 py-3 rounded-md transition">
+                        Learn More
+                    </button>
+                </Link>
             </section>
 
             {/* Peace of Mind Section */}
@@ -166,12 +176,14 @@ function Home() {
 
                 {/* CTA Button at the Bottom */}
                 <div className="text-center mt-12">
-                    <a
-                        href="#services"
-                        className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
-                    >
-                        View Our Full Services
-                    </a>
+                    <Link to="/services">
+                        <a
+                            href="#services"
+                            className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                        >
+                            View Our Full Services
+                        </a>
+                    </Link>
                 </div>
             </section>
 
@@ -183,12 +195,14 @@ function Home() {
                 <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
                     Our team of experts is ready to provide you with reliable, discreet, and professional security solutions tailored to your needs. Let’s get started today!
                 </p>
-                <a
-                    href="#"
-                    className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
-                >
-                    Get Started
-                </a>
+                <Link to ="/contact">
+                    <a
+                        href="#"
+                        className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                    >
+                        Get Started
+                    </a>
+                </Link>
             </section>
 
 

@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from "../components/Navbar";  // Import your Navbar component
+import { useLocation } from "react-router-dom";
 
 function Contact() {
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState("");
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [location]);
+    
 
     // Handle the form submission
     const handleSubmit = async (e) => {

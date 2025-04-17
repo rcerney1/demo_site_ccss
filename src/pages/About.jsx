@@ -3,8 +3,16 @@ import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/default.jpeg";
 import section2Image from "../assets/default.jpeg";  // Tailored Security Solutions Image
 import approachImage from "../assets/default.jpeg"; // Our Approach Image
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function About() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [location]);
+    
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />

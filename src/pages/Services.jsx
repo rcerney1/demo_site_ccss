@@ -1,7 +1,15 @@
 import Navbar from "../components/Navbar";
 import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell } from "react-icons/fa"; // Icons for services
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Services() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [location]);
+
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />

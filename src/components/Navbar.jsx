@@ -32,9 +32,9 @@ function Navbar() {
 
                 {/* Left: Logo + Nav */}
                 <div className="flex items-center space-x-10">
-                    <h1 className={`text-2xl md:text-3xl font-serif font-semibold whitespace-nowrap ${isContactPage ? "text-black" : "text-white"}`}> {/* Apply text-black to the logo on Contact page */}
-                        CCSS
-                    </h1>
+                    <Link to="/" className={`text-2xl md:text-3xl font-serif font-semibold whitespace-nowrap ${scrolled ? "text-gray-900 dark:text-white" : (isContactPage ? "text-black" : "text-white")}`}>
+                        CCSS {/* Logo links to Home */}
+                    </Link>
 
                     <nav className="hidden md:flex space-x-8 text-base font-medium">
                         {/* Use Link instead of a tag */}
