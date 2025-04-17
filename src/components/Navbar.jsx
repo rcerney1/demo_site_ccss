@@ -71,7 +71,7 @@ function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden ml-auto"
+                    className={`md:hidden ml-auto ${isContactPage ? "text-black" : "text-white"}`}
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
                 >
