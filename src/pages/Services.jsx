@@ -1,13 +1,13 @@
 import Navbar from "../components/Navbar";
 import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell } from "react-icons/fa"; // Icons for services
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function Services() {
     const location = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }, [location]);
 
     return (
@@ -15,22 +15,23 @@ function Services() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative w-full h-screen">
+           <section className="relative w-full h-screen">
                 <img
-                    src={"your-hero-image.jpg"} // Replace with actual image path
-                    alt="Security Services"
+                    src="#" // Update this with the actual image URL for the About page
+                    alt="Security Service"
                     className="absolute inset-0 w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-center px-6 md:px-16 text-left pb-24 md:pb-40">
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40" data-aos="fade-up">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl">
-                        Our Security Solutions
+                        Our Security Solution 
                     </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl">
-                        Short Descriptive text tailored for services page
+                    <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl" data-aos="fade-up" data-aos-delay="100">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet scelerisque lectus, id tincidunt purus.
                     </p>
                     <p>picture will be added</p>
                 </div>
             </section>
+
 
             {/* Services Overview Section */}
             <section className="bg-gray-50 text-gray-900 py-24 px-6 md:px-16" data-aos="fade-up">
@@ -46,9 +47,9 @@ function Services() {
 
             {/* Services Cards Section */}
             <section className="bg-gray-50 text-gray-900 py-24 px-6 md:px-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12" data-aos="fade up">
                     {/* Service 1: Data & Voice Cabling */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" >
                         <div className="flex items-center justify-center mb-4">
                             <FaPlug className="text-5xl text-[#e79c8b]" />
                         </div>
@@ -62,7 +63,7 @@ function Services() {
                     </div>
 
                     {/* Service 2: Fiber Optic Cabling */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
                             <FaWrench className="text-5xl text-[#e79c8b]" />
                         </div>
@@ -76,7 +77,7 @@ function Services() {
                     </div>
 
                     {/* Service 3: Surveillance Systems */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
                             <FaCamera className="text-5xl text-[#e79c8b]" />
                         </div>
@@ -90,7 +91,7 @@ function Services() {
                     </div>
 
                     {/* Service 4: Entry Systems */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
                             <FaLock className="text-5xl text-[#e79c8b]" />
                         </div>
@@ -104,7 +105,7 @@ function Services() {
                     </div>
 
                     {/* Service 5: Nurse Call Stations */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
                             <FaBell className="text-5xl text-[#e79c8b]" />
                         </div>
@@ -118,7 +119,7 @@ function Services() {
                     </div>
 
                     {/* Service 6: Data & Voice Solutions */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
                             <FaNetworkWired className="text-5xl text-[#e79c8b]" />
                         </div>
@@ -134,9 +135,11 @@ function Services() {
 
                 {/* Final CTA Section */}
                 <div className="text-center mt-12">
-                    <a href="#contact" className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition">
-                        Book a Consultation
-                    </a>
+                    <Link to="/contact">
+                        <a href="#contact" className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition">
+                            Book a Consultation
+                        </a>
+                    </Link>
                 </div>
             </section>
 

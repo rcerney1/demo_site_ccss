@@ -16,7 +16,7 @@ function Home() {
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
-
+            {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
                     src={sophisticated}
